@@ -1,0 +1,23 @@
+.user_container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(10, 58, 30),rgb(21, 105, 126));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap{
+    width: 400px;
+    min-height: 300px;
+    background-color: #91937657;;
+    padding: 40px 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.form_container{
+  margin-top: 70px;
+}
+.btn{
+    margin-top: 50px;
+}

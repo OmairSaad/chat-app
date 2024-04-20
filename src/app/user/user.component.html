@@ -1,0 +1,9 @@
+<div class="user_container">
+    <div class="wrap">
+        <h3 style="color: white;">Hey User, Welcome back</h3>
+        <div class="form_container">
+            <input type="text" name="" id="" placeholder="Enter your name to continue" class="form-control" [(ngModel)]="name" (keydown)="hit($event)">
+            <button class="btn btn-primary" [disabled]="!name" (click)="send()">Continue</button>
+        </div>
+    </div>
+</div>

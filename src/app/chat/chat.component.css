@@ -1,0 +1,101 @@
+/* @codewithcurious.com */
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+  }
+  
+  /* Chat Window Styles */
+  .chat-window {
+    width: 500px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .chat-area {
+    height: 400px;
+    overflow-y: scroll;
+    padding: 20px;
+  }
+  
+  /* .chat-messages {
+    display: flex;
+    flex-direction: column;
+  }
+   */
+   :host ::ng-deep .message {
+    width: 45%;
+    margin-bottom: 10px;
+    background-color: #114363;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    border: 1px solid;
+    color: #fff;
+    word-wrap: break-word;
+  }
+  
+  :host ::ng-deep .right{
+    float: right;
+    clear: both;
+  }
+  :host ::ng-deep .left{
+    float: left;
+    clear: both;
+  }
+  :host ::ng-deep b{
+    color: rgb(231 255 0);
+    margin-right: 3px;
+  }
+  
+  .user-input {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  #message-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #send-button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    background-color: #114363;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #send-button:disabled{
+    opacity: 0.6;
+    cursor:not-allowed;
+  }
+ 
+  @media screen and (max-width:400px) {
+    .user-input input{
+      width: 200px;
+    }
+  }
